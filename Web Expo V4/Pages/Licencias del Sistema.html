@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Park</title>
+    <link rel="icon" href="../Icon/Icono del sitio.ico">
+    <!--Conexiones de Bootstrap-->
+    <link rel="stylesheet" href="../Bootstrap/bootstrap-5.3.1-dist/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <script src="../Bootstrap/bootstrap-5.3.1-dist/bootstrap-5.3.1-dist/js/bootstrap.bundle.js"></script>
+    <!---->
+    <link rel="stylesheet" href="../Css/Licencias del Sistema.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+    <!--JS Menu-->
+    <script src="../JavaScript/Footer_Y_Menus/MenuPages.js" defer></script>
+    <script src="../JavaScript/Footer_Y_Menus/CargarMenuPages.js"></script>
+    <!--Footer-->
+    <script src="../JavaScript/Footer_Y_Menus/FooterPages.js" defer></script>
+    <script src="../JavaScript/Footer_Y_Menus/CargarFooterPages.js"></script>
+</head>
+<body>
+    <!--Esta es la estructura del menu-->
+    <div id="MenuContenedor"></div>
+    <!---->
+    <div class="container">
+      <br><br>
+    <div class="elementos">
+      <div class="licencia">
+        <section>
+          <div class="container py-5">
+          <div class="row justify-content-center">
+              <div class="col-md-8 col-lg-6 col-xl-4">
+              <div class="card" style="border-radius: 15px;">
+                  <div class="bg-image hover-overlay ripple ripple-surface ripple-surface-light"
+                    data-mdb-ripple-color="light">
+                    <img src="../Img/Lincencias.jpg"
+                    style="border-top-left-radius: 15px; border-top-right-radius: 15px;" class="img-fluid"
+                      alt="Licencia de Software" />
+                  <a href="#!">
+                      <div class="mask"></div>
+                    </a>
+                  </div>
+                  <div class="card-body pb-0">
+                    <div class="mb-2">
+                      <h5 class="card-title">Selecciona una licencia:</h5>
+                      <select class="form-select" id="selectorLicencia">
+                          <option value="ninguno">Selecciona una Opción</option>
+                        <option value="sencilla" id="opcionSencilla">3 Meses de licencia de uso</option>
+                        <option value="premium" id="opcionPremium">1 Año de licencia de uso </option>
+                      </select>
+                      <p class="card-text mt-3">Descripción: <span id="descripcion">Debes seleccionar un tipo de licencia
+                          para observar la descripción
+                      </span></p>
+                    </div>
+                  </div>
+                  <hr class="my-0" />
+                  <div class="card-body pb-0 mb-3">
+                    <div class="d-flex justify-content-between">
+                      <p class="card-text">Subtotal: <span class="text-dark small text-muted" id="precio">$</span></p>
+                      
+                    </div>
+                  </div>
+                  <hr class="my-0" />
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center pb-2 mb-1">
+                      <a href="../index.html" class="text-dark fw-bold">Cancelar</a>
+                      <button type="button" class="btn btn-primary" id="comprarBtn">Comprar ahora</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!--Botones-->
+      <div class="botones">
+        <button id="downloadInstalador" class="download-button">Descargar Fast Park</button>
+        <button id="downloadManual" class="download-button">Descargar Manual</button>
+      </div>
+    </div>
+      <br><br>
+    </div>
+  <!-- Agregar el enlace al archivo JavaScript de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Agregar el enlace al archivo JavaScript de SweetAlert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <!--JS-Licencias-->
+  <script src="../JavaScript/DOM/Licencias.js"></script>
+    <!--Footer-->
+    <div id="FooterPages"></div>
+</body>
+</html>

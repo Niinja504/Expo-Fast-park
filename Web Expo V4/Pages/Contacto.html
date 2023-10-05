@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Park</title>
+    <link rel="icon" href="./Icon/Icono del sitio.ico">
+    <!--Conexiones de Bootstrap-->
+    <link rel="stylesheet" href="../Bootstrap/bootstrap-5.3.1-dist/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <script src="../Bootstrap/bootstrap-5.3.1-dist/bootstrap-5.3.1-dist/js/bootstrap.bundle.js"></script>
+    <!---->
+    <link rel="stylesheet" href="../Css/Contacto.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+    <!--JS Menu-->
+    <script src="../JavaScript/Footer_Y_Menus/MenuPages.js" defer></script>
+    <script src="../JavaScript/Footer_Y_Menus/CargarMenuPages.js"></script>
+    <!--Footer-->
+    <script src="../JavaScript/Footer_Y_Menus/FooterPages.js" defer></script>
+    <script src="../JavaScript/Footer_Y_Menus/CargarFooterPages.js"></script>
+</head>
+<body>
+    <!--Esta es la estructura del menu-->
+    <div id="MenuContenedor"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1664.7542412777977!2d-89.20474089746867!3d13.723349685926612!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2snl!4v1695530925284!5m2!1ses!2snl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!---->
+            <div class="col-lg-6">
+                <form id="formularioContacto">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="5" placeholder="Ingrese su mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="enviarBtn">Enviar</button>
+                    </form>
+                    <br>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <div id="FooterPages"></div>
+    <script src="../JavaScript/DOM/Form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
